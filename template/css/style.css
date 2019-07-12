@@ -5293,10 +5293,88 @@ body {
     }
 }
 
+.help {
+    display: flex;
+    flex-direction: column;
+}
 
+.help__title {
 
+}
 
+.help__items {
+    display: flex;
+    justify-content: space-between;
+}
 
+.help__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 473px;
+    align-items: center;
+    justify-content: center;
+}
+
+.help__item-title {
+    align-self: flex-start;
+}
+
+.help__item-body {
+    display: flex;
+
+}
+
+.help__item-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.help__item-img {
+    display: flex;
+}
+
+.help__item-background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: rgba(54, 95, 145, 0.9);
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.help__item-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    max-width: 211px;
+    margin-left: 20px;
+}
+.help__item-button {
+    background-color: #48658b;
+    width: 100%;
+    height: 100%;
+    max-width: 70px;
+    max-height: 193px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.help__item-button::before {
+    content: '';
+
+}
 
 @media screen and (max-width: 1468px) {
 
