@@ -5246,7 +5246,6 @@ body {
     padding-bottom: 4px;
     width: 100%;
     max-width: 248px;
-    margin-top: 14px;
     font-size: 14px;
     text-decoration: none;
     color: #2c2c2c;
@@ -5275,11 +5274,8 @@ body {
 }
 .reviews-tender__img {
     height: 100%;
-    margin-top: 15px
 }
-.reviews-tender__img img {
-    height: 100%;
-}
+
 @media screen and (max-width: 635px){
     .reviews-tender__title {
         margin: 40px 0 30px 0;
