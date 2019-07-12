@@ -160,18 +160,10 @@ $(document).ready(function() {
 });
 
 
-var reviewTenderSlider = new Swiper('.reviews-tender__container', {
-    slidesPerView: 2,
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-        nextEl: '.reviews-tender__button-next',
-        prevEl: '.reviews-tender__button-prev',
-    },
-});
+
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
-        var reviewSlider = new Swiper('.reviews-tender__container', {
+        var reviewTenderSlider = new Swiper('.reviews-tender__container', {
             slidesPerView: 2,
             spaceBetween: 10,
             loop: true,
