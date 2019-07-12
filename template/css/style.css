@@ -5524,6 +5524,104 @@ body {
 
 
 
+.complex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 53px;
+}
+.complex__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 44px 0 42px 0;
+}
+.complex__description-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    margin-right: 10px;
+    padding: 24px 32px 55px 32px;
+    width: 50%;
+}
+.complex__description-less {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    margin-left: 10px;
+    padding: padding: 24px 32px 55px 32px;
+    width: 50%;
+    align-items: center;
+}
+.complex__description-title {
+    color: #2e2d29;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.65px;
+    text-align: center;
+}
+.complex__description-item {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.35px;
+    margin-top: 23px;
+    padding-left: 23px;
+}
+
+.complex__description-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent transparent black black;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    left: -1.5%;
+    top: 6px;
+}
+
+.complex__description-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.complex__description-number {
+    color: #232628;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 18px;
+}
+.complex__description-conditions {
+    color: #232628;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.complex__description-mail {
+    color: #232628;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
 
 
 
