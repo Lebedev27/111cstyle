@@ -188,6 +188,60 @@ $(document).ready(function() {
                 },
             },
         });
+        let flag = false;
+        const responsiveIcons = (breakpoint) => {
+            if (breakpoint.matches === true && flag === false) {
+                flag = true;
+
+                const arrowPrev = document.querySelector('.steps__button-prev');
+                const arrowNext = document.querySelector('.steps__button-next');
+                const separator = document.querySelectorAll('.services__items-separator');
+                const sliderContainer = document.querySelector('.steps__items');
+                const sliderItem = document.querySelectorAll('.steps__item');
+                const wrapper = document.querySelector('.steps__items .swiper-wrapper');
+
+                arrowNext.style.display = 'flex';
+                arrowPrev.style.display = 'flex';
+                sliderContainer.classList.add('swiper-container');
+                sliderContainer.style.width = '90%';
+                wrapper.style.flexWrap = 'initial';
+                wrapper.style.justifyContent = 'initial';
+
+                [].forEach.call(separator, function (item) {
+                    item.remove();
+                });
+                [].forEach.call(sliderItem, function (item) {
+                    item.classList.add('swiper-slide');
+                });
+
+                const sliderBody = new Swiper(sliderContainer, {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: '.steps__button-next',
+                        prevEl: '.steps__button-prev',
+                    },
+                    loop:true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 80,
+
+                        },
+                        635: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+
+                        },
+                    },
+                });
+            }
+        }
+        window.addEventListener('resize', function () {
+
+            responsiveIcons(window.matchMedia('(max-width: 840px)'));
+        })
+        responsiveIcons(window.matchMedia('(max-width: 840px)'));
     })
 
 })();
